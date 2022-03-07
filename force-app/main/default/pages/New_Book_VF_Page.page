@@ -1,0 +1,28 @@
+<!-- This page can create as well as update a book record -->
+<!-- Here we are using a standard controller -->
+<apex:page standardController="Book__c">
+    <apex:form>
+        <apex:pageBlock>
+            <apex:messages />
+            <apex:pageBlockSection title="Create a new book" collapsible="false">
+                Hello {!$user.firstName}
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Book Details">
+                <apex:panelGrid columns="2">
+                    <!--html table-->
+                    <apex:outputText value="Name" />
+                    <apex:inputField value="{!Book__c.name}" />
+                    <apex:outputText value="Genre" />
+                    <apex:inputField value="{!Book__c.genre__c}" />
+                    <apex:outputText value="Description" />
+                    <apex:inputField value="{!Book__c.description__c}" />
+                    <apex:outputText value="Quantity" />
+                    <apex:inputField value="{!Book__c.quantity__c}" />
+                </apex:panelGrid>
+            </apex:pageBlockSection>
+            <apex:commandButton action="{!cancel}" value="Cancel" />
+            <apex:commandButton action="{!quicksave}" value="Quick Save" />
+            <apex:commandButton action="{!save}" value="Save" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,32 @@
+<!-- Whatever code is written here will run in "User" mode since stanardController is built-in -->
+<!-- So whatever security configurations are done will be followed for each user -->
+<!-- <apex:page standardController="Member__c">
+    <apex:pageMessages />
+    <apex:form>
+        <apex:outputText value="Name of the member" />
+        <apex:inputField value="{!Member__c.Name}" />
+        <apex:outputText value="Email" />
+        <apex:inputField value="{!Member__c.email__c}" />
+        <apex:outputText value="Joined On" />
+        <apex:inputField value="{!Member__c.joined_on__c}" />
+
+        <apex:commandButton action="{!save}" value="Save" />
+    </apex:form>
+</apex:page> -->
+
+
+
+
+<apex:page controller="Member_Security_Test">
+    <apex:pageMessages />
+    <apex:form>
+        <apex:outputText value="Name of the member" />
+        <apex:inputField value="{!Member.Name}" />
+        <apex:outputText value="Email" />
+        <apex:inputField value="{!Member.email__c}" />
+        <apex:outputText value="Joined On" />
+        <apex:inputField value="{!Member.joined_on__c}" />
+
+        <apex:commandButton action="{!save}" value="Save" />
+    </apex:form>
+</apex:page>
