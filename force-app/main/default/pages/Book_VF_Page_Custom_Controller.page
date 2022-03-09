@@ -22,7 +22,7 @@
         }
     </script>
 
-    <apex:form>
+    <apex:form >
         <apex:actionFunction name="unIssuedBookCountJS" action="{!unIssuedBookCount}" reRender="genre-panel">
             <apex:param name="bkRecId" assignTo="{!bookCopiesWrapper.bookRecordId}" value="" />
         </apex:actionFunction>
@@ -37,34 +37,34 @@
             <apex:outputText value="{!b.name}" />
         </apex:column>
 
-        <apex:column>
+        <apex:column >
             <apex:facet name="header">Genre</apex:facet>
             <apex:outputPanel onmousemove="unIssuedBookCountJS('{!b.Id}')" id="genre-panel" title="This book has {!bookCopiesWrapper.bookCopyUnissuedQty} un-issued copies">
-                <apex:outputText value="{!b.genre__c}" />
+                <apex:outputText value="{!b.Genre__c}" />
             </apex:outputPanel>
         </apex:column>
 
-        <apex:column>
+        <apex:column >
             <apex:facet name="header">Quantity</apex:facet>
-            <apex:outputText value="{!b.quantity__c}" />
+            <apex:outputText value="{!b.Quantity__c}" />
         </apex:column>
 
-        <apex:column>
+        <apex:column >
             <apex:facet name="header">Number of Authors</apex:facet>
-            <apex:form>
+            <apex:form >
                 <apex:outputPanel id="author-count-panel">
                     <!-- adding JS support to the output panel -->
                     <apex:actionSupport action="{!borrowerTrend}" event="onmousemove" reRender="author-count-panel">
                         <apex:param name="bkRecId" assignTo="{!borrowerTrendWrapper.bookRecordId}" value="{!b.Id}" />
                     </apex:actionSupport>
-                    <apex:outputText value="{!b.number_of_authors__c}" title="This book has been borrowed {!borrowerTrendWrapper.borrowerCount} times in the past year"
+                    <apex:outputText value="{!b.Number_of_Authors__c}" title="This book has been borrowed {!borrowerTrendWrapper.borrowerCount} times in the past year"
                     />
                 </apex:outputPanel>
             </apex:form>
         </apex:column>
     </apex:dataTable>
 
-    <apex:form>
+    <apex:form >
         <apex:inputHidden value="{!startingFrom}" />
         <apex:panelGrid columns="2" cellpadding="2px" style="font-size=15px">
             <apex:commandLink action="{!previous}" value="Previous"></apex:commandLink>
@@ -83,16 +83,16 @@
 
 
     <!-- A BOOK FORM TO CREATE/UPDATE A BOOK RECORD -->
-    <apex:form>
+    <apex:form >
         <apex:panelGrid columns="2">
             <apex:outputText value="None of the Book" />
             <apex:inputField value="{!book.Name}" />
             <apex:outputText value="Genre" />
-            <apex:inputField value="{!book.genre__c}" />
+            <apex:inputField value="{!book.Genre__c}" />
             <apex:outputText value="Description" />
-            <apex:inputField value="{!book.description__c}" />
+            <apex:inputField value="{!book.Description__c}" />
             <apex:outputText value="Quantity" />
-            <apex:inputField value="{!book.quantity__c}" />
+            <apex:inputField value="{!book.Quantity__c}" />
 
             <apex:commandButton action="{!save}" value="Save" />
         </apex:panelGrid>

@@ -1,0 +1,27 @@
+<aura:component >
+	<h3>Component Style selector in detail </h3>
+    <br />
+    <h1>This is top level heading</h1>
+    <p>This is top level paragraph</p>
+    <br /> <br />
+    <div>
+    	<h1>This is nested level heading</h1>
+        <p>This is nested level paragraph</p>
+    </div>
+    <br /> <br />
+    
+
+    <h1 class='h1class'>This is top level heading with className h1class</h1>
+    <p class='pclass'>This is top level para element with className pclass</p>
+    <br />
+    <div>
+    	<h1 class='h1class'>This is nested level heading with className</h1>
+    	<p class='pclass'>This is nested level para element with className</p>
+    </div>
+    <br /> <br />
+    <p id='myNameI'>My name is Sachin Tendulkar</p>
+    <p>My name is Sourav Ganguly</p>
+    <div>
+    	<p id='myNameII'>MY name is Rahul Dravid</p>
+    </div>
+</aura:component>

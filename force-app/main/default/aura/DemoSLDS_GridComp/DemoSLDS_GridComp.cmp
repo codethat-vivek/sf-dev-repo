@@ -1,0 +1,31 @@
+<aura:component >
+	<div class='slds-grid'>
+    	<div class='slds-col'>Column1</div>
+        <div class='slds-col'>Column2</div>
+        <div class='slds-col'>Column3</div>
+    </div>
+    <br />
+    <div class="slds-grid slds-grid_reverse">
+        <div class="slds-col">Column1</div>
+        <div class="slds-col">Column2</div>
+        <div class="slds-col">Column3</div>
+    </div>
+    <br />
+    <div class="slds-grid slds-grid_vertical">
+        <div class="slds-col">Column1</div>
+        <div class="slds-col">Column2</div>
+        <div class="slds-col">Column3</div>
+    </div>
+    <br />
+    <div class="slds-grid slds-grid_vertical-reverse">
+        <div class="slds-col">Column1</div>
+        <div class="slds-col">Column2</div>
+        <div class="slds-col">Column3</div>
+    </div>
+    <br />
+    <div class="slds-grid">
+        <div class="slds-col slds-size_4-of-6 slds-border_right">Column 1</div>
+        <div class="slds-col slds-size_1-of-6 slds-border_right">Column 2</div>
+        <div class="slds-col slds-size_1-of-6 slds-border_right">Column 3</div>
+    </div>
+</aura:component>

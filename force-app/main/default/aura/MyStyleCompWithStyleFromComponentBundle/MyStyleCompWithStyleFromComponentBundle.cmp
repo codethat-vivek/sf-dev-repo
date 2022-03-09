@@ -1,0 +1,14 @@
+<aura:component >
+    <br />
+    <br />
+	<h3> Using Style From Component Bundle</h3>
+    <div class='myClass'>
+    	<h1>Hello there</h1>
+        <p>Simple para inside div</p>
+    </div>
+    <p>This is outer para with inner <span>span element</span></p>
+    
+    <br />
+    <br />
+    ============================================
+</aura:component>

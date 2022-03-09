@@ -1,0 +1,43 @@
+.THIS {
+    
+}
+h3.THIS{
+    font-weight:bold;
+}
+h1.THIS{
+    color:white;
+    background-color:black;
+}
+p.THIS{
+    color:red;
+}
+
+/* NESTED LEVEL tag selector
+.THIS h1{
+    color:black;
+    background-color:yellow;
+}
+.THIS p{
+    color:blue;
+}*/
+
+
+/* TOP LEVEL CLASS SELECTOR*/
+/*
+.h1class.THIS{
+    color : yellow;
+    background-color : green;
+    font-size: 22px;
+} */
+
+/* top level id selector */
+#myNameI.THIS{
+    color : yellow;
+    background-color : black;
+}
+
+/* Nested level id selector */
+.THIS #myNameII{
+    color : orange;
+    background-color: blue;
+}

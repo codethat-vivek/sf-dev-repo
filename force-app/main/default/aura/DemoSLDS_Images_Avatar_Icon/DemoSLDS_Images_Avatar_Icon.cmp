@@ -1,0 +1,14 @@
+<aura:component >
+	<h1>Images</h1>
+    <img class="slds-image" src="{!$Resource.Image1}"/>
+    <img class="slds-image" src="{!$Resource.Image2}" alt="sachin" style="height:400px; width:500px" />
+    
+    <br />
+    <h1><b>Avatar</b></h1>
+    <span>Medium</span>
+    <span class="slds-avatar slds-avatar--medium">
+        <img src = "{!$Resource.SLDSV+'/images/avatar2.jpg'}" />
+    </span>
+    
+    
+</aura:component>

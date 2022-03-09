@@ -28,25 +28,9 @@
         <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
-    </types>
     <!--<types>
         <members>*</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>Account</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Contact</members>
-        <name>CustomObject</name>
+        <name>StaticResource</name>
     </types> -->
     <version>52.0</version>
 </Package>

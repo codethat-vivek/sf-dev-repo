@@ -1,9 +1,9 @@
-<apex:page>
+<apex:page >
     <apex:includeScript value="{!$Resource.myscript}" />
     <h1>This is a visualforce page</h1>
     <apex:detail inlineEdit="true" relatedList="false" oncomplete="themessage()" />
 
     <!-- firstName and lastName are called field selectors and they are case insensitive -->
-    <p>The current user logged into the org is : {!$user.firstNaME} {!$user.lastName} </p>
+    <p>The current user logged into the org is : {!$User.FirstName} {!$User.LastName} </p>
 
 </apex:page>

@@ -1,0 +1,13 @@
+<aura:component >
+    <ltng:require styles="{!$Resource.JustCSS}" /> 
+	<h1>Using External CSS </h1>
+    <br />
+    <p id='para1'>This is a simple paragraph</p>
+    <br />
+    <div class = 'divClass'>
+    	This is div with class as 'divClass'. Styling is coming from external css.
+    </div>
+    <br />
+    <br />
+    ============================================
+</aura:component>

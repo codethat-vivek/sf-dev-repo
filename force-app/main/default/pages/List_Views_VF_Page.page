@@ -3,7 +3,7 @@
 <!-- For standardSetController recordSetVar(record set variable) attribute is a must -->
 <!-- recordSetVar="books", here books is a variable that denotes collection of  book records-->
 <apex:page standardController="Book__c" recordSetVar="books">
-    <apex:form>
+    <apex:form >
         <apex:selectList value="{!filterId}" size="1">
             <apex:selectOptions value="{!listviewoptions}" />
         </apex:selectList>
@@ -13,12 +13,12 @@
     <apex:pageBlock title="Books in the org">
         <apex:pageBlockTable value="{!books}" var="b">
             <apex:column headerValue="Book Name" value="{!b.name}" />
-            <apex:column headerValue="Genre" value="{!b.genre__c}" />
-            <apex:column headerValue="Quanitity" value="{!b.quantity__c}" />
-            <apex:column headerValue="Number of Authors" value="{!b.number_of_authors__c}" />
+            <apex:column headerValue="Genre" value="{!b.Genre__c}" />
+            <apex:column headerValue="Quanitity" value="{!b.Quantity__c}" />
+            <apex:column headerValue="Number of Authors" value="{!b.Number_of_Authors__c}" />
         </apex:pageBlockTable>
     </apex:pageBlock>
-    <apex:form>
+    <apex:form >
         <p align="center" style="font-size:12pt; font-style:bold">
 
             <apex:commandButton action="{!previous}" value="Previous" />

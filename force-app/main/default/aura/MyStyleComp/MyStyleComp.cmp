@@ -1,0 +1,13 @@
+<aura:component >
+	<h3>Using Inline Styling</h3>
+    <br />
+    <div style="background-color:red">
+    	<p style="color:white; background-color:black">White Text and Black Background</p>
+        <p style="color:yellow;">Yellow Text and Red Background</p>
+    </div>
+    <br />
+    <br />
+    <p>=========================================</p>
+    <br />
+    <br />
+</aura:component>

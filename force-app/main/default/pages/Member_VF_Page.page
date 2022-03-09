@@ -1,13 +1,13 @@
 <apex:page standardController="Member__c" extensions="MemberExtension">
-    <apex:form>
+    <apex:form >
         Name :
         <apex:inputField value="{!Member.name}" />
         <br /> Active :
-        <apex:inputField value="{!Member.active__c}" />
+        <apex:inputField value="{!Member.Active__c}" />
         <br /> Email :
-        <apex:inputField value="{!Member.email__c}" />
+        <apex:inputField value="{!Member.Email__c}" />
         <br /> Joined On :
-        <apex:inputField value="{!Member.joined_on__c}" />
+        <apex:inputField value="{!Member.Joined_On__c}" />
         <br />
         <apex:commandButton action="{!save}" value="Save Member Record" />
     </apex:form>
