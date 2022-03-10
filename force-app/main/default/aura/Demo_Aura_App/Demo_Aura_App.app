@@ -4,6 +4,8 @@
                       name="sachin tendulkar" 
                       gibberish="Each and every value is being passed from the aura:app - Demo_Aura_App to the component as arguments"/> -->
 
-    <c:ParentAttributeComp />
+    <!-- <c:ParentAttributeComp /> -->
+
+    <c:AuraInitHandler />
 
 </aura:application>	
