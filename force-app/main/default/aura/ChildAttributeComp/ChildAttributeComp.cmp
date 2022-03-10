@@ -1,0 +1,10 @@
+<aura:component>
+
+    <aura:attribute name="childAttr" type="String" />
+    <p>Data coming from parent component is <b>{!v.childAttr}</b></p>
+
+    <lightning:button label="Update Child Attribute Value" 
+                      onclick="{!c.updateChildAttr}" />
+    
+
+</aura:component>

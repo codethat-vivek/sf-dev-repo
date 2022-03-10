@@ -1,0 +1,19 @@
+<aura:component>
+    <aura:attribute name="parentAttr" type="string" default="parent attribute value" />
+    <br />
+    <p>Passing this value from parent <b>{!v.parentAttr}</b></p>
+    <br />
+
+    <!-- Difference between pass by value and pass by reference 
+        is that after updating the value of the parentAttr,
+        pass by reference will change but pass by value will not change -->
+    <p>Bound Expression(Pass by Reference)<c:ChildAttributeComp childAttr="{!v.parentAttr}" /></p>
+    <br /><br />
+    
+    <p>UnBound Expression(Pass by Value)<c:ChildAttributeComp childAttr="{#v.parentAttr}" /></p>
+    <br /><br />
+
+    <lightning:button label="Update Parent Attribute Value" 
+                      onclick="{!c.updateParentAttr}" />
+
+</aura:component>	
