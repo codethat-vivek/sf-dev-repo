@@ -1,0 +1,20 @@
+<aura:component>
+    <h2>Example of Calculated Expression - {!4*98} </h2>
+    
+    <aura:attribute name="num" type="Integer" default="10" />
+    <h2>Result of num*4 + 23 = <b>{!v.num*4+23}</b></h2>
+
+    <aura:attribute name="umr" type="Integer" default="10" />
+    <ui:inputNumber label="Enter your age " aura:id="age" value="{!v.umr}" />
+    <p>Your age is {!v.umr}</p>
+
+    <p>========================================================================</p>
+
+    <aura:attribute name="name" type="String" default="Vivek" />
+    <h2> Welcome {!v.name}</h2>
+
+    <aura:attribute name="gibberish" type="String" default="asdf" />
+    <ui:inputText label="Enter anything ---> " aura:id="anything" value="{!v.gibberish}" />
+    <p>This is what you entered ---> {!v.gibberish}</p>
+    
+</aura:component>	
