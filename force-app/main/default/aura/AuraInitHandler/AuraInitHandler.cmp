@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:attribute name="setMeOnInit" type="String" default="some default value" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <p>variable value ->  {!v.setMeOnInit}</p>
+
+    <lightning:button label="Click to update" onclick="{!c.updateOnClick}" />
+
+</aura:component>	
