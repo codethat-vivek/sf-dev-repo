@@ -16,5 +16,40 @@
     <aura:attribute name="gibberish" type="String" default="asdf" />
     <ui:inputText label="Enter anything ---> " aura:id="anything" value="{!v.gibberish}" />
     <p>This is what you entered ---> {!v.gibberish}</p>
+
+    <p>========================================================================</p>
+
+    <aura:attribute name="cricketers" type="List" 
+                    default="['Gavaskar', 'Kapil Dev', 'Sachin', 'Dravid', 'Sehwag']" />
+
     
+    <aura:iteration items="{!v.cricketers}" var="cName">
+        <p>{!cName}</p>
+        <br />
+    </aura:iteration>
+    
+    <p>========================================================================</p>
+
+    <h1>Conditional Expressions </h1>
+    <aura:if isTrue="True">
+        If the condition is True
+        <aura:set attribute="else">
+            If the condition is False
+        </aura:set>
+    </aura:if>
+
+    <p>========================================================================</p>
+
+    <h1>Global Value Provider</h1>
+    <!-- Here we are going to learn about $Browser -->
+    <aura:if isTrue="{!$Browser.isDesktop}">
+        You are on a desktop.
+        <aura:set attribute="else">
+            You are on something else.
+        </aura:set>
+    </aura:if>
+
+    <p>========================================================================</p>
+    <lightning:button label="Check the browser" onclick="{!c.checkBrowser}"/>
+
 </aura:component>	
