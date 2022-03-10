@@ -1,4 +1,5 @@
-<aura:application>
+<!-- upto AuraInitHandler -->
+<!-- <aura:application> --> 
     <!-- <c:AuraAttributes num="23" 
                       umr="19" 
                       name="sachin tendulkar" 
@@ -6,6 +7,11 @@
 
     <!-- <c:ParentAttributeComp /> -->
 
-    <c:AuraInitHandler />
+    <!-- <c:AuraInitHandler /> -->
 
-</aura:application>	
+<!-- </aura:application>	 -->
+
+
+<aura:application extends="force:slds">
+    <c:AuraInitHandler />
+</aura:application>
