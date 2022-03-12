@@ -1,0 +1,12 @@
+<aura:component>
+    
+    <!--
+        The handler for an application event won't work if you set the name attribute 
+        to it. Use the name attribute only when you are handling component events.
+    -->
+    <aura:handler event='c:NewUser' action='{!c.getVal}'/>
+    <aura:attribute name='Name' type='string'/>
+    <h1>Welcome to the WelcomeMSG Comp: 
+        <ui:outputText aura:id='userName' value=''/>
+    </h1>
+</aura:component>	
