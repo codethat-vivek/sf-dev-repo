@@ -1,5 +1,6 @@
 <aura:component>
     <aura:attribute name="setMeOnInit" type="String" default="some default value" />
+    <!-- Aura:handler changes the value of the attribute before its initialization -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <p>variable value ->  {!v.setMeOnInit}</p>
 
