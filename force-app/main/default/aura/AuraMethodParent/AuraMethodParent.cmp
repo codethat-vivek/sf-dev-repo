@@ -1,0 +1,12 @@
+<aura:component>
+    <aura:attribute name="message" type="String" default="--------------Hello from Parent--------------" />
+    
+    <c:AuraMethodChild aura:id='childComponent' />
+
+    <p>{!v.message}</p>
+
+    <div class='slds-m-around_xx-large'>
+        <lightning:button variant='brand' label='Call Aura Method!' onclick='{!c.callAuraMethod}'/>
+    </div>
+
+</aura:component>	

@@ -13,5 +13,5 @@
 
 
 <aura:application extends="force:slds">
-    <c:AuraInitHandler />
+    <c:AuraMethodParent />
 </aura:application>
