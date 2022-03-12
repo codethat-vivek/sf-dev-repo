@@ -1,0 +1,24 @@
+<aura:component>
+    <aura:attribute name="no1" type="Integer" default="2"/>
+    <aura:attribute name="no2" type="Integer" default="5"/>
+    <aura:attribute name="result" type="Integer" />
+
+    <div>
+        <lightning:formattedText value="Number1" />
+        <lightning:input value="{!v.no1}" />
+        <br />
+
+        <lightning:formattedText value="Number2" />
+        <lightning:input value="{!v.no2}" />
+        <br />
+
+        <lightning:button label='Square!' onclick = '{!c.doSquare}' />
+        <br/><br/>
+        <lightning:button label='Multiplication!' onclick = '{!c.doMultiply}' />
+        <br/><br/>
+
+        <p>Result is {!v.result}</p>
+
+    </div>
+
+</aura:component>
