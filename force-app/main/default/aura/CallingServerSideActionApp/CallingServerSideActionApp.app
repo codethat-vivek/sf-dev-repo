@@ -1,3 +1,4 @@
 <aura:application>
-    <c:CallingServerSideActionComp />
+    <!-- <c:CallingServerSideActionComp /> -->
+    <c:OpportunityDataComp />
 </aura:application>	
