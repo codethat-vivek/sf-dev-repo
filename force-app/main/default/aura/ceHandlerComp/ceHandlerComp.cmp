@@ -1,0 +1,11 @@
+<aura:component >
+    <h1>Inside Parent Component</h1>
+    <aura:attribute name='messageFromEvent' type='string'/>
+    <aura:attribute name='numEvents' type='integer' default='0'/>
+    <aura:handler name='cmpEvent' event='c:ceEvent' action='{!c.handleComponentEvent}' />
+    <c:ceNotifier />
+    <br/>
+    <p>{!v.messageFromEvent}</p>
+    <p>Number of events: {!v.numEvents}</p>
+</aura:component>
+

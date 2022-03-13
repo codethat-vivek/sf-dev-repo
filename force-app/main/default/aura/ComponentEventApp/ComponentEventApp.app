@@ -1,3 +1,4 @@
-<aura:application>
-    <c:ceNotifier />
-</aura:application>	
+<aura:application >
+    <!--<c:ceNotifier /> -->    
+    <c:ceHandlerComp />
+</aura:application>

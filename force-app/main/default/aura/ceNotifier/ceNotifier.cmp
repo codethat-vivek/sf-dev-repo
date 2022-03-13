@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:registerEvent name='cmpEvent' type='c:ceEvent'/>
+    <h1>Simple Component Event!</h1><br/>
+    <p>
+        <lightning:button label='Click here to fire a component Event!' onclick='{!c.fireComponentEvent}' />
+    </p>
+    <aura:handler name='cmpEvent' event='c:ceEvent' action='{!c.handleAtSource}' /> 
+</aura:component>
