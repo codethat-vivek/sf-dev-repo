@@ -24,6 +24,10 @@
         
         component.set('v.words', words);
         component.set('v.winWord', winWord);
+
+        // resetting the board every time
+        helper.resetBoard(component);
+
     },
     doRender : function(component, event, helper){
         console.log('Render completed');
@@ -35,11 +39,13 @@
             // user has won
             component.set('v.result', 'YOU WIN');
             console.log('You win');
+            helper.disableBoard(component);
         }
         else if(clickCount === 3){
             // user has lost
             component.set('v.result', 'YOU LOSE');
             console.log('You lose');
+            helper.disableBoard(component);
         }
         component.set('v.clickCount', clickCount);
     }
