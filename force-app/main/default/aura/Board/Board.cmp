@@ -13,6 +13,9 @@
     <aura:handler name="onclick" event="c:BlockClickEvent" action="{!c.blockClickHandler}" />
 
     <aura:method name="startGame" action="{!c.doInit}" description="Start New Game"/>
+    
+    <!-- Another method for reshuffle button -->
+    <aura:method name="reshuffleBoard" action="{!c.reshuffleBoard}" description="Reshuffle Board" />
 
     <div class="board">
         <lightning:layout>

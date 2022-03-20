@@ -48,5 +48,11 @@
 
         // reset the result
         component.set('v.result', "");
+    },
+    
+    fireResultEvent : function(resultValue){
+        let appevent = $A.get("e.c:ResultApplicationEvent");
+        appevent.setParam({result : resultValue});
+        appevent.fire();
     }
 })
