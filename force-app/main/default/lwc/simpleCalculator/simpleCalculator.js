@@ -2,6 +2,9 @@ import { LightningElement, track } from 'lwc';
 
 export default class SimpleCalculator extends LightningElement {
     @track result;
+    @track previousResults = []
+    @track showPreviousResults = false;
+
     firstNumber;
     secondNumber;
 
@@ -19,28 +22,32 @@ export default class SimpleCalculator extends LightningElement {
         const firstNum = parseInt(this.firstNumber);
         const secondNum = parseInt(this.secondNumber);
         this.result = "Result = " + firstNum + secondNum;
-        console.log(this.result);
+        this.previousResults.push(this.result);
     }
 
     subtractHandler(){
         const firstNum = parseInt(this.firstNumber);
         const secondNum = parseInt(this.secondNumber);
         this.result = "Result = " + (firstNum - secondNum);
-        console.log(this.result);
+        this.previousResults.push(this.result);
     }
     
     multiplyHandler(){
         const firstNum = parseInt(this.firstNumber);
         const secondNum = parseInt(this.secondNumber);
         this.result = "Result = " + firstNum * secondNum;
-        console.log(this.result);
+        this.previousResults.push(this.result);
     }
 
     divideHandler(){
         const firstNum = parseInt(this.firstNumber);
         const secondNum = parseInt(this.secondNumber);
         this.result = "Result = " + firstNum / secondNum;
-        console.log(this.result);
+        this.previousResults.push(this.result);
+    }
+
+    showPreviousResultsToggle(event){
+        this.showPreviousResults = event.target.checked;
     }
     
 }
