@@ -1,0 +1,17 @@
+<template>
+
+    <lightning-card title="Hello World LWC">
+        <div class="greeting">Hello {name}</div>
+        <lightning-input label="name" onchange={nameChangeHandler}></lightning-input>
+    </lightning-card>
+
+    <lightning-input type="checkbox" label="Show my name" onchange={showContentHandler}></lightning-input>
+    <template if:true={displayContent}>
+        <div>My name is Anthony Gonsalves</div>
+    </template>
+
+    <template for:each={cityList} for:item="city">
+        <p key={city}>{city}</p>
+    </template>
+
+</template>
